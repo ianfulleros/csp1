@@ -1,11 +1,4 @@
-/* Landing-page stylesheet*/
-/*#landingBody{
-	background-image: url("../image/img.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	height:100vh;
-
-}*/
+/*index*/
 .bg-wrapper{
 	background-image: url("../image/landing.jpg");
 	background-repeat: no-repeat;
@@ -15,7 +8,7 @@
 	/*opacity: 0.7;*/
 }
 .landing-button{
-	/*color:#606060;*/
+	color:#606060;
 	letter-spacing:1px;
 	    text-transform: uppercase;
     border: none;
@@ -35,22 +28,15 @@
 
 
 
-/*Index*/
+/*Home.html*/
 
 *{
 	margin:0;
 	padding:0;
 	box-sizing: border-box;
 }
-/*#header-section{
-	text-align:center;
-}*/
-/*.navbar-nav.navbar-center {
-    position: absolute;
-    left: 50%;
-    transform: translatex(-50%);
 
-}*/
+
 .navbar{
 	margin-bottom: 0;
     text-decoration: none;
@@ -69,6 +55,10 @@
     color: black !important;
 
 }
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: lightgrey !important;
+}
 #site-name{
 	font-weight:normal;
 	line-height:1;
@@ -85,11 +75,24 @@
 	min-height:100vh;
 	/*height:500px;*/
 }
+/*endCarousel*/
+
+/*headerPage*/
+#header-page h1{
+	text-align:center;
+	margin-top:50px;
+	font-weight:bold;
+}
+/**/
+}
 #left-paragraph-about{
 	padding-top:100px;
 	/*font-size:20px;*/
 	padding-bottom:150px;
 
+}
+#about-section{
+	margin-bottom:50px;
 }
 #about-header{
 	font-weight:bold;
@@ -98,14 +101,17 @@
 #left-paragraph-about p{
 	font-size:20px;
 }
-#about-section,
+/*#about-section,
 #service-section{
 	font-family: 'Cormorant Garamond', serif;
 
-}
+}*/
 #aboutImage{
-	padding-top:130px;
+	margin-top:50px;
 
+}
+.thumbnail{
+	margin-top:50px;
 }
 #middle-image{
 	height:500px;
@@ -128,16 +134,20 @@
 #thirdContent-wrap{
 	padding-top:100px;
 }
+.text-center span{
+	font-size:25px;
+}
 #header-service-section{
 	font-size:50px;
+
 }
 #firstContent-wrap{
 	margin-top:50px;
 }
 #left-text{
-	padding-top:10px;
+	margin-top:10px;
 	font-size:20px;
-	padding-left:50px;
+	margin-left:50px;
 
 }
 #first-image{
@@ -153,15 +163,15 @@
 	font-size:40px;
 }
 #second-image{
-	padding-left:50px;
+	
 }
 #left-second-text{
-	padding-top:50px;
+	margin-top:50px;
 	font-size:20px;
-	padding-right:20px;
+	/*padding-right:20px;*/
 }
 #thirdContent-wrap{
-	padding-top:100px;
+	margin-top:100px;
 }
 #thirdContent-text{
 	font-size:20px;
@@ -172,18 +182,18 @@
 	padding-left:20px;
 }
 
+/*teamSection*/
+#teamSection{
+	text-align:center;
+}
+/**/
+
 /* project-section*/
 #projects-section h2{
 	text-align:center;
 }
 /**/
 
-#anotherImage img{
-	height:350px;
-}
-#anotherImage h2{
-	text-align:center;
-}
 #footer-section{
 	text-align:center;
 }
@@ -206,29 +216,57 @@ padding-bottom:20px;
 
 /* projectSection Stylesheet*/
 #project-header-text{
-	margin-top:10vh;
+	margin-top:20vh;
+	text-align:center;
 }
 
 #text-caption{
 	text-align:center;
 }
+
 .thumbnail{
 	 background-color: #edecec !important;
+	 min-height:350px !important;
+}
+.thumbnail #afp-p2{
+	min-height:160px !important;
+}
+.thumbnail #amvaca{
+	min-height:180px !important;
+}
+.thumbnail #bayantel{
+	min-height:180px !important;
+}
+.thumbnail #bayantel-2{
+	min-height:167px !important;
+}
+.thumbnail #Afp{
+	min-height:170px !important;
+}
+.thumbnail #afp-p8{
+	min-height:180px !important;
 }
 .thumbnail h4{
 	color:#88744a;
 }
-#text-caption{
-	min-height:200px !important;
-}
 #text-footer-project{
 	text-align:center;
+	color:white;
+	padding-top:10px;
+}
+#footer-section-project{
+	background-color:black;
+	padding-bottom:20px;
 }
 
 /* * * * *  * * **/
 
 
-
+/*footer.html*/
+.wrapper-contactHtml{
+	margin-top:70px;
+}
+/**/
 
 
 
