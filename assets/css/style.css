@@ -121,11 +121,7 @@
 #left-paragraph-about p{
 	font-size:20px;
 }
-/*#about-section,
-#service-section{
-	font-family: 'Cormorant Garamond', serif;
 
-}*/
 #aboutImage{
 	margin-top:50px;
 
@@ -167,12 +163,9 @@
 #left-text{
 	margin-top:10px;
 	font-size:20px;
-	margin-left:50px;
 
 }
-#first-image{
-	padding-left:30px;
-}
+
 
 #secondContent-wrap{
 	margin-top:100px;
@@ -304,22 +297,7 @@ padding-bottom:10px;
 .thumbnail h4{
 	color:#88744a;
 }
-#footer-section-project{
-	text-align:center;
-}
-#footer-section-project{
-background-color:lightgrey;
-color:black;
-padding-bottom:20px;
-}
-#text-footer-project{
-	color:black;
-	padding-top:10px;
-}
-.footerMedia-project li{
-	display:inline-block;
-	color:black;
-}
+
 
 
 /* * * * *  * * **/
@@ -327,7 +305,7 @@ padding-bottom:20px;
 
 /*contact.html*/
 #contact-location{
-	margin-top:70px;
+	margin-top:50px;
 }
 #text-footer-contact{
 	text-align:center;	
@@ -379,7 +357,48 @@ padding-bottom:20px;
 		background-size:cover;
 		background-position: center;
 		background-repeat:no-repeat;
+	}
+	#inner-carousel>.item>img{
+	background-size:cover;
+	background-position: center;
+	background-repeat:no-repeat;
+	width:100%;
+	min-height:100vh;
+	/*height:500px;*/
+}
+	#about-section{ 
+		text-align:center;
 	}	
+	/*endAbout*/
+	#service-section{ 
+		text-align:center;
+	}
+	#header-service-section{
+		font-size:40px;
+	}
+	#col-wrapper-header{
+		text-align:center;
+		text-justify: inter-word;
+	}
+	#service-section{
+		text-align:center;
+		text-justify: inter-word;
+	}
+	#about-containerBg{
+		background-position: center;
+
+	}
+	#contentAbout-section{
+		text-align: center;
+		text-justify: inter-word;
+	}
+	/*endService.html*/
+
+
+	#containerBg{
+		background-position: left;
+	} /*endProject.html*/
+
 }
 
 /*tablet layout*/
@@ -394,6 +413,31 @@ padding-bottom:20px;
 		padding-left:80vh;
 		padding-top:30vh;
 	}
+
+	#about-section{ /*iphone4*/
+		text-align:center;
+	}	
+	#service-section{
+		text-align:center;
+	}
+	}
+	#col-wrapper-header{
+		text-align:center;
+		text-justify: inter-word;
+	}
+	#service-section{
+		text-align:center;
+		text-justify: inter-word;
+	}
+	#about-containerBg{
+		background-position: cover;
+
+	}
+	#contentAbout-section{
+		text-align: center;
+		text-justify: inter-word;
+	}
+	
 }
 	
 
