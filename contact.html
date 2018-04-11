@@ -11,16 +11,24 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 
+
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
 	<!-- boostrapCss -->
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 
-	<title>Our Projects</title>
+	
+
+	<title>Performance Builders</title>
+	 
 </head>
+
+
 <body>
 
 		
 		<!-- navSection -->
-
+	<main id="contactWrapper">
 
 		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="theNav">
 			    <div class="navbar-header">
@@ -33,10 +41,11 @@
 			    <div class="navbar-collapse collapse">
 			        <ul class="nav navbar-nav" id="unorderedList">
 			            <li class="site" id="site-name"><a href=home.html>Performance Builders</a></li>
-			            <li><a href=home.html#about-section>About </a></li>
-			            <li><a href=home.html#service-section>Services</a></li>
+			            <li><a href="home.html">Home</a></li>
+			            <li><a href=about.html>About </a></li>
+			          
 			            <li><a href="project.html">Projects</a></li>
-			            <li><a href="contact.html">Contact Us</a></li>
+			            <li class="active"><a href="contact.html">Contact Us</a></li>
 			        </ul>
 			    </div>
 			</nav>
@@ -44,20 +53,16 @@
 
 	<!--  -->
 
-
-		<div class="container-fluid">
-			<div class="wrapper-contactHtml">
-			<div class="row">
+	<section id="contact-location">
+	  <div class="wrapper-contactHtml">
+		 <div class="container-fluid">
+			  <div class="row">
 				<div class="col-md-4">
 					<h2>Hello, Let's work together!</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua.</p>
-
-
 				</div>
-			
-
 			<div class="col-md-8">
 				<div class="well">
 					<form class="add-description">
@@ -77,15 +82,68 @@
 							<label for="contact-message">Message</label>
 							<textarea rows="8" id="contact-message" class="form-control" placeholder="Enter your message"></textarea>
 						</div>
-						<button type="submit" class="button btn-primary clear">Send Message</button>
+						<button type="button" class="button btn-primary">Send Message</button>
 					</form>
+				  </div>
 				</div>
 			</div>
+			</div>
 		</div>
+	 </section>
+
+	 <div class="container-fluid">
+	 	<div class="row">
+	 	<div class="col-md-4">
+	 		<h2>Get in touch with us</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.</p>
+			<ul class="item" id="contact-item">
+				<li><span class="glyphicon glyphicon-map-marker"></span> 34 Emerald St. Fairview Park, Quezon City, 1128, Philippines</li>
+				<li><span class="glyphicon glyphicon-phone-alt"></span> +63 2938 1395, + 63 2939 7467</li>
+				<li><span class="glyphicon glyphicon-envelope"></span> info@pbdc.com.ph </li>
+			</ul>
+	 	</div>
+	 	
+	 	<div class="col-md-8">
+		    <div id="map"></div>
+		    <script>
+		      function initMap() {
+		        var uluru = {lat: 14.707254 , lng: 121.070468};
+		        var map = new google.maps.Map(document.getElementById('map'), {
+		          zoom: 4,
+		          center: uluru
+		        });
+		        var marker = new google.maps.Marker({
+		          position: uluru,
+		          map: map
+		        });
+		      }
+		    </script>
 		</div>
+	</div>
+
+	</div>
+
+
+	</main>		<!-- end -->
+
+
+		<section id="footer-section-contact">
+			<footer id="text-footer-contact">
+			Copyright &copy: 2018 by Performance Builders</footer>
+		</section>
 
 
 
+	<!-- fontAWesome -->
+
+	<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+
+	<!-- googleMap -->
+	<script async defer
+    src="https://maps.googleapis.com/maps/api/js?keyAIzaSyC_C4xbNvN7RPKymvsnhsiYIrCHIho87zI&callback=initMap">
+    </script>	
 
 	<!-- bootstrap requires jQuery -->
 
@@ -96,5 +154,4 @@
 
 	
 </body>
-
 </html>

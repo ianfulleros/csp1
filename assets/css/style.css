@@ -1,16 +1,26 @@
 /*index*/
-.bg-wrapper{
+#theWrapper{
 	background-image: url("../image/landing.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	height:100vh;
 
-	/*opacity: 0.7;*/
+}
+.buttonContainer{
+	padding-left:80vh;
+	padding-top:30vh;
+}
+.buttonContainer span{
+	font-size:50px;
+	font-weight:bold;	
+}
+.banner h2,span{
+	text-transform: uppercase;
 }
 .landing-button{
 	color:#606060;
 	letter-spacing:1px;
-	    text-transform: uppercase;
+	text-transform: uppercase;
     border: none;
     padding: 16px;
     text-align: center;
@@ -26,7 +36,7 @@
 
 }
 
-
+/**/
 
 /*Home.html*/
 
@@ -45,7 +55,7 @@
     z-index: 100;
     border-bottom: 1px solid rgba(255, 255, 255, .3);
     background-color: rgba(255, 255, 255, 0);
-
+    /*background-color:black;*/
 
 }.navbar-inverse{
 	background-color:rgba(255,255,255,0.6) !important;
@@ -83,7 +93,16 @@
 	margin-top:50px;
 	font-weight:bold;
 }
+
+#header-page h3{
+	text-align:center;
+}
 /**/
+
+
+
+
+/*aboutSection*/
 }
 #left-paragraph-about{
 	padding-top:100px;
@@ -97,6 +116,7 @@
 #about-header{
 	font-weight:bold;
 	font-size:40px;
+	color:#88744a;
 }
 #left-paragraph-about p{
 	font-size:20px;
@@ -127,12 +147,12 @@
 }
 
 #service-section{
-	padding-top:50px;
+	margin-top:50px;
 }
 #firstContent-wrap,
 #secondContent-wrap,
 #thirdContent-wrap{
-	padding-top:100px;
+	margin-top:100px;
 }
 .text-center span{
 	font-size:25px;
@@ -175,18 +195,28 @@
 }
 #thirdContent-text{
 	font-size:20px;
-	padding-left:50px;
+	/*margin-left:10px;*/
 }
 #img3-service{
-	padding-bottom:10px;
-	padding-left:20px;
+	margin-bottom:20px;
+	/*margin-left:20px;*/
 }
 
 /*teamSection*/
 #teamSection{
 	text-align:center;
 }
-/**/
+
+
+/*teamSection*/
+.thumbnail #expert-tn3{
+	min-height:130px !important;
+}
+.thumbnail #expert-tn4{
+	min-height:200px !important;
+}
+
+
 
 /* project-section*/
 #projects-section h2{
@@ -198,15 +228,20 @@
 	text-align:center;
 }
 #footer-section{
-background-color:#000;
-color:white;
-padding-bottom:20px;
+background-color:lightgrey;
+color:black;
+padding-bottom:10px;
 }
 #text-footer{
-	color:white;
+	color:black;
 	padding-top:10px;
 }
+.footerMedia li{
+	display:inline-block;
+	color:black;
+}
 
+/* endHome.html*/
 
 
 
@@ -215,61 +250,121 @@ padding-bottom:20px;
 
 
 /* projectSection Stylesheet*/
-#project-header-text{
-	margin-top:20vh;
-	text-align:center;
+#containerBg{
+	background-image: url("../image/project-header.jpg");
+	background-repeat: no-repeat;
+/*	background-size: cover;*/
+	height:400px;
+	background-position: center;
+/*	margin-top:50px;*/
 }
-
+.page-header-project{
+	text-align:center;
+	font-weight:bold;
+	text-transform: uppercase;
+	margin-top:5vh;
+	background-color:#F6F6F6;
+}
+#firstImages-projectSection{
+	background-color:#F6F6F6;
+}
 #text-caption{
 	text-align:center;
+
+}
+#text-caption h4{
+	font-weight:bold;
 }
 
 .thumbnail{
 	 background-color: #edecec !important;
-	 min-height:350px !important;
+	 min-height:370px !important;
+}
+.thumbnail #afp-p1{
+	min-height:200px !important;
 }
 .thumbnail #afp-p2{
-	min-height:160px !important;
+	min-height:200px !important;
 }
 .thumbnail #amvaca{
-	min-height:180px !important;
+	min-height:215px !important;
 }
 .thumbnail #bayantel{
-	min-height:180px !important;
+	min-height:215px !important;
 }
 .thumbnail #bayantel-2{
-	min-height:167px !important;
+	min-height:200px !important;
 }
 .thumbnail #Afp{
-	min-height:170px !important;
+	min-height:208px !important;
 }
 .thumbnail #afp-p8{
-	min-height:180px !important;
+	min-height:215px !important;
 }
 .thumbnail h4{
 	color:#88744a;
 }
-#text-footer-project{
+#footer-section-project{
 	text-align:center;
-	color:white;
-	padding-top:10px;
 }
 #footer-section-project{
-	background-color:black;
-	padding-bottom:20px;
+background-color:lightgrey;
+color:black;
+padding-bottom:20px;
 }
+#text-footer-project{
+	color:black;
+	padding-top:10px;
+}
+.footerMedia-project li{
+	display:inline-block;
+	color:black;
+}
+
 
 /* * * * *  * * **/
 
 
-/*footer.html*/
-.wrapper-contactHtml{
+/*contact.html*/
+#contact-location{
 	margin-top:70px;
 }
+#text-footer-contact{
+	text-align:center;	
+}
+ #map {
+        height: 400px;
+ 	     width: 100%;       
+}
+#contact-item li{
+	list-style: none;
+}
+
+
+
 /**/
 
 
 
+/*about.html*/
+#about-containerBg{
+	background-image: url("../image/about-head.jpg");
+	background-repeat: no-repeat;
+	/*background-size: cover;*/
+	height:390px;
+	background-position: center;
+	margin-top:30px;
+}
+
+.btn-default {
+    color: white !important;
+    background-color: black !important;
+ }
+
+
+
+
+/**/
 
 
 
@@ -280,20 +375,40 @@ padding-bottom:20px;
 
 /*mobile layout*/
 @media  (max-width:400px){
-		
+	#theWrapper{
+		background-size:cover;
+		background-position: center;
+		background-repeat:no-repeat;
+	}	
 }
-
 
 /*tablet layout*/
 
 @media only screen and (min-width: 401px) and (max-width: 960px){
-	
+	#theWrapper{
+		background-size:cover;
+		background-position: center;
+		background-repeat:no-repeat;
+	}	
+	.buttonContainer{
+		padding-left:80vh;
+		padding-top:30vh;
+	}
 }
+	
 
 
 /*Desktop*/
 @media only screen and (min-width: 961px){
-
+	#theWrapper{
+		background-size:cover;
+		background-position: center;
+		background-repeat:no-repeat;
+	}	
+	.buttonContainer{
+		padding-left:80vh;
+		padding-top:30vh;
+	}
 }
 
 
