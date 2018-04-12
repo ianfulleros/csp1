@@ -74,9 +74,8 @@
 	line-height:1;
 	font-size:18px;
 }
-.navbar-header{
-	/*background-position:fixed;*/
-}
+
+
 #inner-carousel>.item>img{
 	background-size:cover;
 	background-position: center;
@@ -111,19 +110,21 @@
 
 }
 #about-section{
-	margin-bottom:50px;
+	margin-bottom:30vh;
 }
-#about-header{
-	font-weight:bold;
+#history{
+/*	font-weight:bold;
 	font-size:40px;
-	color:#88744a;
+	color:#88744a;*/
 }
 #left-paragraph-about p{
 	font-size:20px;
 }
 
 #aboutImage{
-	margin-top:50px;
+	margin-top:5vh;
+	/*height:40vh;*/
+	/*height:70vh;*/
 
 }
 .thumbnail{
@@ -171,9 +172,9 @@
 	margin-top:100px;
 }
 #h2-color{
-	color:#88744a;
+	/*color:#88744a;
 	font-weight: bold;
-	font-size:40px;
+	font-size:40px;*/
 }
 #second-image{
 	
@@ -195,23 +196,31 @@
 	/*margin-left:20px;*/
 }
 
+
 /*teamSection*/
 #teamSection{
 	text-align:center;
+	background-color: #333;
+	color:white;
+}
+#teamSection >h2{
+	text-transform: uppercase;
+	font-weight:bold;
 }
 
-
-/*teamSection*/
 .thumbnail #expert-tn3{
 	min-height:130px !important;
 }
 .thumbnail #expert-tn4{
 	min-height:200px !important;
 }
-
+/**************/
 
 
 /* project-section*/
+.wrap-icon{
+	margin-top:15vh;
+}
 #projects-section h2{
 	text-align:center;
 }
@@ -219,19 +228,21 @@
 
 #footer-section{
 	text-align:center;
+	color:black;
+	border-top:1px solid grey;
 }
 #footer-section{
-background-color:lightgrey;
-color:black;
+background-color:#333;
+color:white;
 padding-bottom:10px;
 }
 #text-footer{
-	color:black;
+	color:white;
 	padding-top:10px;
 }
 .footerMedia li{
 	display:inline-block;
-	color:black;
+	color:white;
 }
 
 /* endHome.html*/
@@ -242,24 +253,30 @@ padding-bottom:10px;
 
 
 
-/* projectSection Stylesheet*/
-#containerBg{
-	background-image: url("../image/project-header.jpg");
-	background-repeat: no-repeat;
-/*	background-size: cover;*/
-	height:400px;
+/***************************************/
+/******projectSection Stylesheet******/
+/***************************************/
+.projectImage{
+	background-image:url("../image/proj-img.jpg");
+	background-size:cover;
 	background-position: center;
-/*	margin-top:50px;*/
+	background-repeat:no-repeat;
+	/*width:100%;*/
+	height:65vh;
 }
+
+#inner-carousel-project>img{
+	background-position: center
+}
+
 .page-header-project{
 	text-align:center;
 	font-weight:bold;
 	text-transform: uppercase;
-	margin-top:5vh;
-	background-color:#F6F6F6;
+	margin-top:40vh;
 }
 #firstImages-projectSection{
-	background-color:#F6F6F6;
+	/*background-color:#F6F6F6;*/
 }
 #text-caption{
 	text-align:center;
@@ -297,52 +314,103 @@ padding-bottom:10px;
 .thumbnail h4{
 	color:#88744a;
 }
+.pHead-center{
+	text-align:center;
+	margin-top:10vh;
+	font-style:italic;
+}
+
 
 
 
 /* * * * *  * * **/
 
 
-/*contact.html*/
-#contact-location{
-	margin-top:50px;
+/***************************************/
+/******Contact Stylesheet******/
+/***************************************/
+.contactImage{
+	background-image:url("../image/header-image.jpg");
+	background-size:cover;
+	background-position: center;
+	background-repeat:no-repeat;
+	width:100%;
+	height:70vh;
+	/*position:absolute;*/
+	
 }
-#text-footer-contact{
-	text-align:center;	
+.navbar-inverse{
+    background-color: white !important;
 }
- #map {
-        height: 400px;
- 	     width: 100%;       
+.msg{
+	text-align:center;
+	margin-top:10vh;
+	font-style:italic;
+	
 }
-#contact-item li{
-	list-style: none;
+.ht-contact{
+	text-align:center;
+	text-transform: uppercase;
+	margin-top:7vh;
 }
-
-
-
+#contact-message{
+	height:40vh;
+}
+.ht-contact2{
+	text-align:center;
+	text-transform: uppercase;
+	margin-top:10vh;
+}
+#map{
+	height:400px;
+	width:100%;
+}
 /**/
 
 
 
-/*about.html*/
-#about-containerBg{
-	background-image: url("../image/about-head.jpg");
-	background-repeat: no-repeat;
-	/*background-size: cover;*/
-	height:390px;
+/***************************************/
+/******About Stylesheet******/
+/***************************************/
+.aboutImage{
+	background-image:url("../image/header-image.jpg");
+	background-size:cover;
 	background-position: center;
-	margin-top:30px;
+	background-repeat:no-repeat;
+	/*width:100%;*/
+	height:70vh;
 }
 
 .btn-default {
     color: white !important;
     background-color: black !important;
  }
+ #contentAbout-section{
+ 	margin-top:20vh;
+
+ }
+
+ .comment-wrap{
+	background-color: #222222;
+	color:white;
+	margin-top:3vh;
+	/*margin-bottom:10vh;*/
+}
+.date{
+	margin-top:1vh;
+}
+.ta-center{
+	text-align:center;
+	margin-top:10vh;
+	font-style:italic;
+	font-size:30px;
+}
+
+
+/*******End About*****/
 
 
 
-
-/**/
 
 
 
@@ -352,7 +420,7 @@ padding-bottom:10px;
 
 
 /*mobile layout*/
-@media  (max-width:400px){
+@media only screen and (min-width:320px) and (max-width:400px){
 	#theWrapper{
 		background-size:cover;
 		background-position: center;
@@ -363,19 +431,67 @@ padding-bottom:10px;
 	background-position: center;
 	background-repeat:no-repeat;
 	width:100%;
-	min-height:100vh;
+	min-height:70vh;
 	/*height:500px;*/
-}
+	}
+	#indexButton{
+		padding-left:20vh;
+		padding-top:10vh;
+	}
+	#theBanner >h2{
+		font-size:20px;
+	}
+	#theBanner >span{
+		font-size:35px;
+	}
+	/*endIndex*/
+
+	#header-page >h1{
+		margin-top:2vh;
+		font-size:18px;
+	}
+	#header-page >h3{
+		margin-top:1vh;
+		font-size:15px;
+	}
 	#about-section{ 
 		text-align:center;
+	}
+	#left-paragraph-about >h2{
+		font-size:18px;
+		font-weight:bold;
 	}	
-	/*endAbout*/
+	#left-paragraph-about >p{
+		font-size:15px;
+	}
 	#service-section{ 
 		text-align:center;
 	}
 	#header-service-section{
-		font-size:40px;
+		font-size:18px;
+		font-weight:bold;
 	}
+	#h2-color{
+		font-size:18px;
+		font-weight:bold;
+	}
+	#left-text >p{
+		font-size:15px;
+	}
+	#left-second-text >p{
+		font-size:15px;
+	}
+	#thirdContent-text{
+		font-size:15px;
+	}
+	#teamSection h2{
+		font-size:18px;
+	}
+	.thumbnail{
+	
+		
+	}
+
 	#col-wrapper-header{
 		text-align:center;
 		text-justify: inter-word;
@@ -391,13 +507,40 @@ padding-bottom:10px;
 	#contentAbout-section{
 		text-align: center;
 		text-justify: inter-word;
+		margin-top:30vh;
 	}
+
 	/*endService.html*/
 
+	/*****************/
+	/***about.html****/
+	.ta-center{
+	font-size:20px;
+	margin-top:5vh;
+	}
 
+
+	/***end about.html*/
+
+
+	/****project.html******/
 	#containerBg{
 		background-position: left;
-	} /*endProject.html*/
+	} 
+	.pHead-center{
+	font-size:20px;
+	}
+	.page-header-project{
+	margin-top
+	}
+	/****end project.html****/
+
+
+	/****contact.html****/
+	.msg >h1{
+		font-size:30px;
+	}
+
 
 }
 
@@ -408,36 +551,99 @@ padding-bottom:10px;
 		background-size:cover;
 		background-position: center;
 		background-repeat:no-repeat;
+		/*width:100%;*/
+		min-height:100vh;
 	}	
-	.buttonContainer{
-		padding-left:80vh;
-		padding-top:30vh;
+	#indexButton{
+		padding-left:27vh;
+		padding-top:20vh;
+	}
+	#theBanner >h2{
+		font-size:30px;
+	}
+	#theBanner >span{
+		font-size:80px;
+	}
+	#buttonLanding{
+		font-size:25px;
 	}
 
-	#about-section{ /*iphone4*/
-		text-align:center;
-	}	
-	#service-section{
+	#about-section{ 
 		text-align:center;
 	}
+	#left-paragraph-about h2{
+		font-size:50px;
+	}
+	#left-paragraph-about >p{
+		font-size:25px;
+	}	
+	#first-image,
+	#second-image,
+	#third-image{
+		width:100%;
+	}
+	#left-text,
+	#left-second-text,
+	#thirdContent-text{
+		font-size:25px;
+	}
+	#service-section{
+		text-align:center;
 	}
 	#col-wrapper-header{
 		text-align:center;
 		text-justify: inter-word;
 	}
 	#service-section{
-		text-align:center;
+		text-align:center;	
 		text-justify: inter-word;
 	}
-	#about-containerBg{
-		background-position: cover;
-
+	.thumbnail >img{
+		width:100%;
 	}
+	#text-caption >h4{
+		text-transform: uppercase;
+		font-size:35px;
+	}
+	#text-caption >h5{
+		font-size:30px;
+		font-weight: bold;
+	}
+
 	#contentAbout-section{
 		text-align: center;
 		text-justify: inter-word;
 	}
-	
+	#text-footer{
+		font-size:20px;
+	}
+	.footerMedia >li{
+		font-size:20px;
+	} /*endHome.html*/
+
+	#about-containerBg{
+		background-position: cover;
+	}
+	#contain >h2,
+	#contain2 >h2{
+		font-weight:bold;
+		text-transform: uppercase;
+	}
+	#contentAbout-section{
+		font-size:20px;
+	}
+	#contain >button{
+		font-size:20px;
+	} /*endAbout.html*/
+
+	#text-caption >h4{
+		font-size:25px;
+	}
+	#text-caption >h5{
+		font-size:20px;
+	}
+
+
 }
 	
 
@@ -449,13 +655,27 @@ padding-bottom:10px;
 		background-position: center;
 		background-repeat:no-repeat;
 	}	
-	.buttonContainer{
-		padding-left:80vh;
-		padding-top:30vh;
+	#theBanner >h2{
+		font-size:30px;
 	}
+	#theBanner >span{
+		font-size:80px;
+	}
+	#buttonLanding{
+		font-size:20px;
+	}
+	#indexButton{
+		padding-top:15vh;
+		padding-left:76vh;
+	}
+	#first-image,
+	#second-image,
+	#third-image{
+		width:100%;
+	}
+
+	/*about.html*/
 }
-
-
 
 
 
