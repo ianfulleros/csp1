@@ -100,13 +100,39 @@
 				<h2><small>come</small><br>visit our office</h2>
 			</div>
 
-			 <div id="map"></div>
+		<div class="loc-wrap">
+			 <div class="container">
+			 	<div class="row">
+			 		<div class="col-md-4">
+			 			<h4>Address:</h4>
+			 			<p>34 Emerald St. Fairview Park, Quezon City, 1128, Philippines</p>
+			 		</div>
+
+			 	
+			 		<div class="col-md-4">
+			 			<h4>Contact Number:</h4>
+			 			<p>+63 2938 1395, + 63 2939 7467</p>
+			 		</div>
+
+			 		<div class="col-md-4">
+			 			<h4>Email Address:</h4>
+			 			<p>info@pbdc.com.ph </p>
+			 		</div>
+			 	</div>
+			 </div>
+		</div>
+		
+			    <div id="map"></div>
 			    <script>
-			      var map;
 			      function initMap() {
-			        map = new google.maps.Map(document.getElementById('map'), {
-			          center: {lat: 14.7071383, lng: 121.0680916},
-			          zoom: 8
+			        var uluru = {lat: 14.7071383, lng: 121.0680916};
+			        var map = new google.maps.Map(document.getElementById('map'), {
+			          zoom: 18,
+			          center: uluru
+			        });
+			        var marker = new google.maps.Marker({
+			          position: uluru,
+			          map: map
 			        });
 			      }
 			    </script>
@@ -127,10 +153,18 @@
 				  <li><i class="fab fa-pinterest-p"></i></li>
 			</ul>
 
+			<div class="container">
+				<div class="disclaimer">
+					<h6>Disclaimer: No copyright infringement is intended. This is only for educational purposes and not for profit. Some assets used are not owned by the developer/s unless otherwise stated; the credit goes to the owner.</h6>
+				</div>
+			</div>
+
 		</section>
 
 
-	<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyB60myBllHzGbZnAEujmnoHY1ThKQGSPe0o"></script>
+	<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB89mEoFD02AeVvCCNUhg78AARuoBqgjWA&callback=initMap">
+    </script>
 
 	<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
 
