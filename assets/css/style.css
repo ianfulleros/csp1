@@ -43,7 +43,7 @@
 	text-transform: uppercase;
 }
 .landing-button{
-	color:#606060;
+	/*color:#606060;*/
 	letter-spacing:1px;
 	text-transform: uppercase;
     padding: 16px;
@@ -52,15 +52,17 @@
     transition:0.3s all ease;
     font-size: 1em;
     cursor: pointer;
-    border: 2px solid black !important;
-    color:black;
+  	 background-color:black;
+	color:white !important;
     padding:10px 20px 10px 20px !important;
 }
 .landing-button:hover,
 .landing-button:active,
 .landing-button:focus{
-	background-color:black;
-	color:white !important;
+	background-color:lightgray;
+	color:black !important;
+	font-weight: bold;
+	border: 1px solid black;
 }
 
 /**/
