@@ -31,6 +31,10 @@
 	color: white;
 	transition: 0.5s all ease;
 }
+.landing-image-wrap h1 {
+	padding-bottom:20vh;
+}
+
 
 #theWrapper{
 	background-image: url("../image/landing.jpg");
@@ -976,7 +980,7 @@ padding-bottom:10px;
 		background-repeat:no-repeat;
 	}	
 	#theBanner >h1{
-		font-size:70px;
+		font-size:80px;
 		text-transform: uppercase;
 	}
 	#theBanner >h4{
@@ -987,8 +991,8 @@ padding-bottom:10px;
 		font-size:15px;
 	}
 	#indexButton{
-		padding-top:2vh;
-		padding-left:110vh;
+		padding-top:25vh;
+		padding-left:65vh;
 	}
 
 	/**********************/
