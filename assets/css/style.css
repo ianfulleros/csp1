@@ -31,23 +31,37 @@
 	color: white;
 	transition: 0.5s all ease;
 }
-.landing-image-wrap h1 {
-	padding-bottom:20vh;
-}
 
 
 #theWrapper{
-	background-image: url("../image/landing.jpg");
+	background-image: url("../image/new-slide3.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	height:100vh;
 
 }
+#theWrapper{
+	color:white;
+	/*font-family: 'Playball', cursive;*/
+}
+		
+	#theBanner{
+		text-align:center;
+		padding-top:230px;
+		text-transform: uppercase;
+	}
+	#theBanner h1{
+		font-size:55px;
+	}
+	#theBanner h4{
+		font-size:30px;
+	}
 .banner h2,span{
 	text-transform: uppercase;
 }
 .landing-button{
-	color:#606060;
+
+	color:white;
 	letter-spacing:1px;
 	text-transform: uppercase;
     padding: 16px;
@@ -57,7 +71,7 @@
     font-size: 1em;
     cursor: pointer;
     border: 2px solid black !important;
-    color:black;
+    background-color:black;
     padding:10px 20px 10px 20px !important;
 }
 .landing-button:hover,
@@ -468,7 +482,7 @@ padding-bottom:10px;
 @media only screen and (min-width:320px) and (max-width:400px){
 	#theWrapper{
 		background-size:cover;
-		background-position: center;
+		background-position: right;
 		background-repeat:no-repeat;
 	}
 	#inner-carousel>.item>img{
@@ -479,18 +493,21 @@ padding-bottom:10px;
 	/*min-height:70vh;*/
 /*	height:500px;*/
 	}
-	#indexButton{
-		padding-left:22vh;
-		padding-top:18vh;
-	}
-	#theBanner >h4{
-		font-size:18px;
-		text-transform: uppercase;
+	
+	
+	#theBanner h4{
+		font-size:15px;
+		
 	}
 	#theBanner h1{
-		text-transform: uppercase;
+		font-size:30px;
 	}
-
+	#buttonLanding{
+		font-size:10px;
+	}
+	#theBanner{
+		padding-top:40vh;
+	}
 	
 	/*endIndex*/
 
@@ -716,16 +733,14 @@ padding-bottom:10px;
 		/*width:100%;*/
 		min-height:100vh;
 	}	
-	#indexButton{
-		padding-left:27vh;
-		padding-top:25vh;
-		text-transform: uppercase;
+	#theBanner{
+		padding-top:40vh;
 	}
 	#theBanner h4{
 		font-size:30px;
 	}
 	#theBanner h1{
-		font-size:50px;
+		font-size:55px;
 		font-weight: bold;
 	}
 	
@@ -978,22 +993,7 @@ padding-bottom:10px;
 		background-size:cover;
 		background-position: center;
 		background-repeat:no-repeat;
-	}	
-	#theBanner >h1{
-		font-size:80px;
-		text-transform: uppercase;
-	}
-	#theBanner >h4{
-		font-size:25px;
-		text-transform: uppercase;
-	}
-	#buttonLanding{
-		font-size:15px;
-	}
-	#indexButton{
-		padding-top:25vh;
-		padding-left:65vh;
-	}
+}
 
 	/**********************/
 	/*********************/
