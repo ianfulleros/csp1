@@ -587,8 +587,9 @@ padding-bottom:10px;
 		font-size:18px;
 	}
 	.work_images{
+		width:100%;
 		min-height:50vh;
-		object-fit: cover;
+		object-fit: cover !important;
 	}
 	#middle-image{
 		height:300px !important;
